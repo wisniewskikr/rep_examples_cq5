@@ -6,7 +6,7 @@
 	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"    
     jcr:primaryType="cq:Template"
     jcr:title="Hello World - Redirect Template"
-    jcr:description="Template of Redirect Page for Hello World"
+    jcr:description="Template of Redirect Page for Hello World project"
     allowedPaths="/content(/.*)?"
     ranking="{Long}1">
     

@@ -41,11 +41,16 @@
                             name="./actionType"
                             xtype="formactionselection">
                             <options jcr:primaryType="cq:WidgetCollection">					            
-					            <helloWorldAction
+					            <helloWorldInputAction
 					                jcr:primaryType="cq:Widget"
-					                text="Redirect Action"
-					                value="cq5-example-helloworld/components/form/actions/helloWorldAction"
-					                qtip="Redirect to url from text field" />
+					                text="Hello World Input Action"
+					                value="cq5-example-helloworld/components/form/actions/helloWorldInputAction"
+					                qtip="Action for Input Page" />
+					             <helloWorldOutputAction
+					                jcr:primaryType="cq:Widget"
+					                text="Hello World Output Action"
+					                value="cq5-example-helloworld/components/form/actions/helloWorldOutputAction"
+					                qtip="Action for Output Page" />   
 					   		</options>
                         </actiontype>    
                         <formid

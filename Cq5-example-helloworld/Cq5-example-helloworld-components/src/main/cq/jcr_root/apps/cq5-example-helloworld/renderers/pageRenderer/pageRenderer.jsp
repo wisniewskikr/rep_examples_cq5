@@ -7,14 +7,17 @@
 
 
 <head>
-	<title>Hello World - Input</title>
+	<title>Hello World</title>
 	<cq:includeClientLib js="myproject.all" />
 	<cq:includeClientLib css="myproject.all" />
 </head>
 <cq:include script="head.jsp"/>
 
+
 <body>
-	<cq:include path="par" resourceType="foundation/components/parsys"/>
+	<div class="page">
+		<cq:include path="par" resourceType="foundation/components/parsys"/>
+	</div>	
 </body>
 
 </html>

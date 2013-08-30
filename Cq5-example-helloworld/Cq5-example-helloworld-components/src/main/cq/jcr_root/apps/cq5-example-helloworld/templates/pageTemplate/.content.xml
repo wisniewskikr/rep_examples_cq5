@@ -5,13 +5,13 @@
 	xmlns:jcr="http://www.jcp.org/jcr/1.0" 
 	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"    
     jcr:primaryType="cq:Template"
-    jcr:title="Hello World - Input Page Template"
-    jcr:description="Template of Input Page for Hello World"
+    jcr:title="Hello World - Page Template"
+    jcr:description="Template of Page for Hello World project"
     allowedPaths="/content/cq5-example-helloworld(/.*)?"
     ranking="{Long}2">
     
     <jcr:content
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="cq5-example-helloworld/renderers/inputRenderer"/>
+        sling:resourceType="cq5-example-helloworld/renderers/pageRenderer"/>
                 
 </jcr:root>

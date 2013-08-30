@@ -7,5 +7,5 @@
     jcr:primaryType="cq:Component"
     jcr:title="Form"
     allowedParents="[*/parsys]"
-    componentGroup="Form Hello World"
+    componentGroup="Hello World"
     sling:resourceSuperType="foundation/components/form/start"/>
