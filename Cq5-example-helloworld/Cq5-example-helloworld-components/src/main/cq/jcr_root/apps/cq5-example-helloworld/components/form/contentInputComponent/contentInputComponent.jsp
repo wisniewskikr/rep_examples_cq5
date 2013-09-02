@@ -2,13 +2,18 @@
 <%%>
 <%@page import="pl.kwi.utils.ResourceUtil" %>
 <%%>
+<c:set var="currentPagePath" value="<%= currentPage.getPath() %>"/>
 <c:set var="errorField" value="<%= request.getParameter("errorField") %>"/>
+<%%>
 <c:set var="nameText" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameText", "Name") %>"/>
-<c:set var="nameErrorMessage" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameErrorMessage", "Error Message") %>"/>
+<c:set var="nameErrorMessage" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameErrorMessage", "Please fill this field") %>"/>
 <c:set var="nameDescription" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameDescription", "Type your name here") %>"/>
 
 
 <div class="content">
+
+	<input type="hidden" id="currentPagePath" name="currentPagePath" value="${currentPagePath}"/>
+
 	<div class="contentElement">
 		<div class="text">
 			${nameText} * 
