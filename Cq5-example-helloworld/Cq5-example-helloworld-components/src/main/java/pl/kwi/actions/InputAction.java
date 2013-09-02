@@ -21,10 +21,8 @@ public class InputAction {
 	public void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
 		
 		String errorMessage = getErrorMessage(request);
-		System.out.println("---errorMessage: " + errorMessage);
 		if(errorMessage != null) {
 			String currentPagePath = request.getParameter("currentPagePath");
-			System.out.println("---currentPagePath: " + currentPagePath);
 			response.sendRedirect(currentPagePath + ".html" + errorMessage);
 			return;
 		}

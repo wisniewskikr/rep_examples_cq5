@@ -1,9 +1,12 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.utils.ResourceUtil" %>
+<%@page import="pl.kwi.services.IResourceService" %>
 <%%>
-<c:set var="name" value="<%= request.getParameter("name") %>"/>
-<c:set var="helloWorldText" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "helloWorldText", "Hello World") %>"/>
+<c:set var="name" value="<%=request.getParameter("name")%>"/>
+<%%>
+<sling:defineObjects />
+<% IResourceService resourceService =   sling.getService(IResourceService.class);%> 
+<c:set var="helloWorldText" value="<%= resourceService.getResPropWithDefaultValue(resource, "helloWorldText", "Hello World")%>"/>
 
 
 <div class="content">

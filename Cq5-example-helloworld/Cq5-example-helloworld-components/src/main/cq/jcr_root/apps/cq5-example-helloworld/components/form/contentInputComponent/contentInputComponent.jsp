@@ -1,13 +1,16 @@
+<%@page import="pl.kwi.services.ResourceService"%>
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.utils.ResourceUtil" %>
+<%@page import="pl.kwi.services.IResourceService" %>
 <%%>
 <c:set var="currentPagePath" value="<%= currentPage.getPath() %>"/>
 <c:set var="errorField" value="<%= request.getParameter("errorField") %>"/>
 <%%>
-<c:set var="nameText" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameText", "Name") %>"/>
-<c:set var="nameErrorMessage" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameErrorMessage", "Please fill this field") %>"/>
-<c:set var="nameDescription" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "nameDescription", "Type your name here") %>"/>
+<sling:defineObjects />
+<% IResourceService resourceService =   sling.getService(IResourceService.class);%> 
+<c:set var="nameText" value="<%= resourceService.getResPropWithDefaultValue(resource, "nameText", "Name") %>"/>
+<c:set var="nameErrorMessage" value="<%= resourceService.getResPropWithDefaultValue(resource, "nameErrorMessage", "Please fill this field") %>"/>
+<c:set var="nameDescription" value="<%= resourceService.getResPropWithDefaultValue(resource, "nameDescription", "Type your name here") %>"/>
 
 
 <div class="content">

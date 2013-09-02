@@ -1,9 +1,11 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.utils.ResourceUtil" %>
+<%@page import="pl.kwi.services.IResourceService" %>
 <%%>
-<c:set var="submitText" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "submitText", "Submit") %>"/>
-<c:set var="submitHint" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "submitHint", "Submit button hint") %>"/>
+<sling:defineObjects />
+<% IResourceService resourceService = sling.getService(IResourceService.class);%> 
+<c:set var="submitText" value="<%= resourceService.getResPropWithDefaultValue(resource, "submitText", "Submit") %>"/>
+<c:set var="submitHint" value="<%= resourceService.getResPropWithDefaultValue(resource, "submitHint", "Submit button hint") %>"/>
 
 
 <div class="buttons">

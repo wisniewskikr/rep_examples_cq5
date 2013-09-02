@@ -1,8 +1,10 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.utils.ResourceUtil" %>
+<%@page import="pl.kwi.services.IResourceService" %>
 <%%>
-<c:set var="pageTitle" value="<%= ResourceUtil.getResPropWithDefaultValue(resource, "pageTitle", "Hello World") %>"/>
+<sling:defineObjects />
+<% IResourceService resourceService =   sling.getService(IResourceService.class);%>
+<c:set var="pageTitle" value="<%= resourceService.getResPropWithDefaultValue(resource, "pageTitle", "Hello World")%>"/>
 
 
 <div class="title"><h2 id="title">${pageTitle}</h2></div>
