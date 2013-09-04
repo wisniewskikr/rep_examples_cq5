@@ -1,6 +1,7 @@
 package pl.kwi.services;
 
 import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
@@ -8,6 +9,9 @@ import org.apache.sling.api.resource.ValueMap;
 @Service(value = IResourceService.class)
 @Component(immediate = true)
 public class ResourceService implements IResourceService {
+	
+	@Reference
+	private INodeService nodeService;
 		
 	
 	/* (non-Javadoc)
@@ -46,9 +50,16 @@ public class ResourceService implements IResourceService {
 		
 		String result = getResourceProperty(resource, propertyName);
 		
-		if (result == null) {
-			result = defaultValue;
-		}
+		try {
+			
+			if (result == null) {
+				result = defaultValue;
+				nodeService.updateNode(resource.getPath(), propertyName, defaultValue);
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}		
 		
 		return result;
 		

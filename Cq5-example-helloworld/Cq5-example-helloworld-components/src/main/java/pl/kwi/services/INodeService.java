@@ -44,6 +44,16 @@ public interface INodeService {
 	 */
 	public void updateNode(String absPath, Map<String, String> props)
 			throws Exception;
+	
+	/**
+	 * Method updates node with specified path. It updates only one property.
+	 * 
+	 * @param absPath object <code>String</code> with abstract path to node
+	 * @param propName object <code>String</code> with updated property name
+	 * @param propValue object <code>String</code> with updated property value
+	 * @throws Exception
+	 */
+	public void updateNode(String absPath, String propName, String propValue) throws Exception;
 
 	/**
 	 * Method deletes node with specified path.

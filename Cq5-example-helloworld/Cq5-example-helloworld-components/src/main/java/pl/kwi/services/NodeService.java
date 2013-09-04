@@ -94,6 +94,24 @@ public class NodeService implements INodeService {
 		saveSession();
 		
 	}
+		
+	/* (non-Javadoc)
+	 * @see pl.kwi.services.INodeService#updateNode(java.lang.String, java.lang.String, java.lang.String)
+	 */
+	public void updateNode(String absPath, String propName, String propValue) throws Exception {
+		
+		Node node = readNode(absPath);
+		if(node == null) {
+			throw new Exception("Can not update node because node not exists. Path to node: " + absPath);
+		}
+		
+		openSession();
+		
+		node.setProperty(propName, propValue);
+		
+		saveSession();
+		
+	}
 	
 	/* (non-Javadoc)
 	 * @see pl.kwi.services.INodeService#deleteNode(javax.jcr.Session, java.lang.String, java.lang.String)
