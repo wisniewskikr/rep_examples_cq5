@@ -54,6 +54,9 @@ public class ResourceService implements IResourceService {
 			
 			if (result == null) {
 				result = defaultValue;
+				System.out.println("---resource.getPath(): " + resource.getPath());
+				System.out.println("---propertyName: " + propertyName);
+				System.out.println("---defaultValue: " + defaultValue);
 				nodeService.updateNode(resource.getPath(), propertyName, defaultValue);
 			}
 			

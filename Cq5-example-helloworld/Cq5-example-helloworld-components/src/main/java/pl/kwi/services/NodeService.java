@@ -100,12 +100,18 @@ public class NodeService implements INodeService {
 	 */
 	public void updateNode(String absPath, String propName, String propValue) throws Exception {
 		
-		Node node = readNode(absPath);
-		if(node == null) {
-			throw new Exception("Can not update node because node not exists. Path to node: " + absPath);
+		openSession();
+		
+		Node node = null;
+		
+		if(session.nodeExists(absPath)) {
+			node = session.getNode(absPath);
 		}
 		
-		openSession();
+		if(node == null) {
+			saveSession();
+			throw new Exception("Can not update node because node not exists. Path to node: " + absPath);
+		}		
 		
 		node.setProperty(propName, propValue);
 		
@@ -170,6 +176,7 @@ public class NodeService implements INodeService {
 	private void saveSession() throws Exception{
 		
 		session.save();
+		session.logout();
 		
 	}
 	
