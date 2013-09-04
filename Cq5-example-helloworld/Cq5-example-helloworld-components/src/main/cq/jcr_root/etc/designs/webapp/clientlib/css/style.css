@@ -59,3 +59,7 @@
 	color: red;
 	float: right;
 }
+
+form div.section {
+	padding-bottom: 0px !important;
+}
