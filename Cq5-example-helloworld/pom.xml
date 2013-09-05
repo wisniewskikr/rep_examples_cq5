@@ -47,6 +47,14 @@
 		<modules>
 		  	<module>Cq5-example-helloworld-components</module>
 		  </modules>
+	</profile>
+	
+	<profile>
+		<id>content</id>
+		<modules>
+			<module>Cq5-example-helloworld-components</module>
+		  	<module>Cq5-example-helloworld-content</module>
+		  </modules>
 	</profile>	
   
   </profiles>
