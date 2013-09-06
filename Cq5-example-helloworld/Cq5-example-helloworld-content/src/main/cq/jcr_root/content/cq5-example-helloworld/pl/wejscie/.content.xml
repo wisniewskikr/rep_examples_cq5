@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2013-09-06T08:01:37.974+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/cq5-example-helloworld/templates/pageTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="wejscie"
+        sling:resourceType="cq5-example-helloworld/renderers/pageRenderer">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <start
+                jcr:created="{Date}2013-09-05T15:25:12.219+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-09-06T08:01:37.969+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/form/start"
+                action="/content/usergenerated/cq5-example-helloworld/pl/wejscie/cq-gen1378387512265/"
+                actionType="cq5-example-helloworld/components/form/actions/helloWorldInputAction"
+                formid="_content_cq5-example-helloworld_pl_wejscie_jcr_content_par_start"
+                pageAfterAction="/content/cq5-example-helloworld/pl/wyjscie"/>
+            <titlecomponent
+                jcr:created="{Date}2013-09-05T15:25:19.178+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-09-06T07:58:59.436+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/form/titleComponent"
+                pageTitle="Witaj Świecie"/>
+            <subtitlecomponent
+                jcr:created="{Date}2013-09-05T15:25:30.821+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-09-06T07:59:19.606+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/form/subtitleComponent"
+                pageName="Wejście"
+                textPage="Strona"/>
+            <contentinputcomponen
+                jcr:created="{Date}2013-09-06T07:58:42.119+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-09-06T08:00:07.416+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/form/contentInputComponent"
+                nameDescription="Wpisz tutaj swoje imię"
+                nameErrorMessage="Proszę uzupełnić to pole"
+                nameText="Imię"/>
+            <submitcomponent
+                jcr:created="{Date}2013-09-06T07:58:46.930+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2013-09-06T08:00:25.760+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/form/submitComponent"
+                submitHint="Idź do następnej strony"
+                submitText="Ok"/>
+            <form_end_1378387512275
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/form/end"/>
+        </par>
+    </jcr:content>
+</jcr:root>
