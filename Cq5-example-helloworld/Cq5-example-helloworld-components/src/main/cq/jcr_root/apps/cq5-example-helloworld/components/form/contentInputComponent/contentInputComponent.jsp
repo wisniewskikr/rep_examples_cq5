@@ -1,7 +1,7 @@
-<%@page import="pl.kwi.services.ResourceService"%>
+<%@page import="pl.kwi.services.impl.ResourceService"%>
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.services.IResourceService" %>
+<%@page import="pl.kwi.services.intf.IResourceService" %>
 <%%>
 <c:set var="currentPagePath" value="<%= currentPage.getPath() %>"/>
 <c:set var="errorField" value="<%= request.getParameter("errorField") %>"/>

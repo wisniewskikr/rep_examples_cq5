@@ -1,6 +1,6 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.services.IResourceService" %>
+<%@page import="pl.kwi.services.intf.IResourceService" %>
 <%%>
 <c:set var="name" value="<%=request.getParameter("name")%>"/>
 <%%>

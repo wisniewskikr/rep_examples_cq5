@@ -1,10 +1,13 @@
-package pl.kwi.services;
+package pl.kwi.services.impl;
 
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
+
+import pl.kwi.services.intf.INodeService;
+import pl.kwi.services.intf.IResourceService;
 
 @Service(value = IResourceService.class)
 @Component(immediate = true)

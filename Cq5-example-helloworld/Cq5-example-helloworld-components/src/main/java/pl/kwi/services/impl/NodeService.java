@@ -1,4 +1,4 @@
-package pl.kwi.services;
+package pl.kwi.services.impl;
 
 import java.util.Map;
 
@@ -10,6 +10,8 @@ import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
+
+import pl.kwi.services.intf.INodeService;
 
 import com.day.cq.commons.jcr.JcrConstants;
 import com.day.cq.commons.jcr.JcrUtil;

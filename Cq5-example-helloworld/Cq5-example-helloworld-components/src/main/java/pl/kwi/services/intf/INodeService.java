@@ -1,4 +1,4 @@
-package pl.kwi.services;
+package pl.kwi.services.intf;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package pl.kwi.services;
+package pl.kwi.services.intf;
 
 import org.apache.sling.api.resource.Resource;
 
