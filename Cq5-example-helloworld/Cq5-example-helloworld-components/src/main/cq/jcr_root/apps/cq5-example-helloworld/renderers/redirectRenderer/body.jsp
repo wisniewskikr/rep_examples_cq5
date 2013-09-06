@@ -3,6 +3,6 @@
 
 <body>
 
-	<cq:include path="par" resourceType="cq5-example-helloworld/components/redirectComponent"/>
+	<cq:include path="par" resourceType="cq5-example-helloworld/components/redirect"/>
 
 </body>
