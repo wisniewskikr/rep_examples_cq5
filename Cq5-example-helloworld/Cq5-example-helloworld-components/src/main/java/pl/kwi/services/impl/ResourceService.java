@@ -1,21 +1,16 @@
 package pl.kwi.services.impl;
 
 import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 
-import pl.kwi.services.intf.INodeService;
 import pl.kwi.services.intf.IResourceService;
 
 @Service(value = IResourceService.class)
 @Component(immediate = true)
 public class ResourceService implements IResourceService {
 	
-	@Reference
-	private INodeService nodeService;
-		
 	
 	/* (non-Javadoc)
 	 * @see pl.kwi.utils.IResourceService#getResourceProperty(org.apache.sling.api.resource.Resource, java.lang.String)
@@ -43,41 +38,6 @@ public class ResourceService implements IResourceService {
 		}
 		
 		return result;
-		
-	}	
-	
-	/* (non-Javadoc)
-	 * @see pl.kwi.utils.IResourceService#getResPropWithDefaultValue(org.apache.sling.api.resource.Resource, java.lang.String, java.lang.String)
-	 */
-	public String getResPropWithDefaultValue(Resource resource, String propertyName, String defaultValue) {
-		
-		String result = getResourceProperty(resource, propertyName);
-		
-		try {
-			
-			if (result == null) {
-				result = defaultValue;
-				System.out.println("---resource.getPath(): " + resource.getPath());
-				System.out.println("---propertyName: " + propertyName);
-				System.out.println("---defaultValue: " + defaultValue);
-				nodeService.updateNode(resource.getPath(), propertyName, defaultValue);
-			}
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}		
-		
-		return result;
-		
-	}
-	
-	/* (non-Javadoc)
-	 * @see pl.kwi.utils.IResourceService#getResourcePropertyFromChild(org.apache.sling.api.resource.Resource, java.lang.String, java.lang.String)
-	 */
-	public String getResourcePropertyFromChild(Resource resource, String propertyName, String relPath) {
-		
-		Resource child = resource.getChild(relPath);
-		return getResourceProperty(child, propertyName);
 		
 	}
 	

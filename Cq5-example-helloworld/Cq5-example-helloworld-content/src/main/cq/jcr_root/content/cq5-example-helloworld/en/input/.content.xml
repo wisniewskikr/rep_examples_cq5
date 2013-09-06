@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2013-09-04T12:27:38.763+02:00"
+        cq:lastModified="{Date}2013-09-06T10:57:03.972+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/apps/cq5-example-helloworld/templates/pageTemplate"
         jcr:primaryType="cq:PageContent"
@@ -12,53 +12,53 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="foundation/components/parsys">
             <start
-                jcr:created="{Date}2013-09-04T11:46:33.978+02:00"
+                jcr:created="{Date}2013-09-06T10:55:55.938+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2013-09-04T12:27:38.759+02:00"
+                jcr:lastModified="{Date}2013-09-06T10:56:31.312+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/form/start"
-                action="/content/usergenerated/cq5-example-helloworld/en/input/cq-gen1378287994023/"
+                action="/content/usergenerated/cq5-example-helloworld/en/input/cq-gen1378457755973/"
                 actionType="cq5-example-helloworld/components/form/actions/helloWorldInputAction"
                 formid="_content_cq5-example-helloworld_en_input_jcr_content_par_start"
                 pageAfterAction="/content/cq5-example-helloworld/en/output"/>
-            <titlecomponent
-                jcr:created="{Date}2013-09-04T11:46:45.493+02:00"
+            <title
+                jcr:created="{Date}2013-09-06T10:56:01.509+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2013-09-04T11:46:45.493+02:00"
+                jcr:lastModified="{Date}2013-09-06T10:56:01.509+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="cq5-example-helloworld/components/form/titleComponent"
+                sling:resourceType="cq5-example-helloworld/components/form/title"
                 pageTitle="Hello World"/>
-            <subtitlecomponent
-                jcr:created="{Date}2013-09-04T11:46:53.533+02:00"
+            <subtitle
+                jcr:created="{Date}2013-09-06T10:56:06.316+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2013-09-04T11:47:31.341+02:00"
+                jcr:lastModified="{Date}2013-09-06T10:56:45.052+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="cq5-example-helloworld/components/form/subtitleComponent"
+                sling:resourceType="cq5-example-helloworld/components/form/subtitle"
                 pageName="Input"
                 textPage="Page"/>
-            <contentinputcomponen
-                jcr:created="{Date}2013-09-04T11:47:02.963+02:00"
+            <contentinput
+                jcr:created="{Date}2013-09-06T10:56:09.311+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2013-09-04T11:47:02.963+02:00"
+                jcr:lastModified="{Date}2013-09-06T10:56:09.311+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="cq5-example-helloworld/components/form/contentInputComponent"
+                sling:resourceType="cq5-example-helloworld/components/form/contentInput"
                 nameDescription="Type your name here"
                 nameErrorMessage="Please fill this field"
                 nameText="Name"/>
-            <submitcomponent
-                jcr:created="{Date}2013-09-04T11:47:12.981+02:00"
+            <submit
+                jcr:created="{Date}2013-09-06T10:56:12.864+02:00"
                 jcr:createdBy="admin"
-                jcr:lastModified="{Date}2013-09-04T11:47:50.179+02:00"
+                jcr:lastModified="{Date}2013-09-06T10:57:03.969+02:00"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="cq5-example-helloworld/components/form/submitComponent"
+                sling:resourceType="cq5-example-helloworld/components/form/submit"
                 submitHint="Go to the next page"
                 submitText="Ok"/>
-            <form_end_1378287994038
+            <form_end_1378457755985
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/form/end"/>
         </par>
