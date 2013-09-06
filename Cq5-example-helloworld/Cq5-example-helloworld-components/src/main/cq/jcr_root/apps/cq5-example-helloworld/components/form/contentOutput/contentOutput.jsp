@@ -6,7 +6,7 @@
 <%%>
 <sling:defineObjects />
 <% IResourceService resourceService =   sling.getService(IResourceService.class);%> 
-<c:set var="helloWorldText" value="<%= resourceService.getResPropWithDefaultValue(resource, "helloWorldText", "Hello World")%>"/>
+<c:set var="helloWorldText" value="<%= resourceService.getResourceProperty(resource, "helloWorldText")%>"/>
 
 
 <div class="content">

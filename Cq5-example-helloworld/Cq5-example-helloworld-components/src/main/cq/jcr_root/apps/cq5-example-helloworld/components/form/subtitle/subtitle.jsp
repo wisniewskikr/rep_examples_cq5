@@ -4,8 +4,8 @@
 <%%>
 <sling:defineObjects />
 <% IResourceService resourceService = sling.getService(IResourceService.class);%> 
-<c:set var="textPage" value="<%= resourceService.getResPropWithDefaultValue(resource, "textPage", "Page")%>"/>
-<c:set var="pageName" value="<%= resourceService.getResPropWithDefaultValue(resource, "pageName", "Page Name")%>"/>
+<c:set var="textPage" value="<%= resourceService.getResourceProperty(resource, "textPage")%>"/>
+<c:set var="pageName" value="<%= resourceService.getResourceProperty(resource, "pageName")%>"/>
 
 
 <div class="subtitle"><h3 id="subtitle">${textPage}: <b>${pageName}</b></h3></div>

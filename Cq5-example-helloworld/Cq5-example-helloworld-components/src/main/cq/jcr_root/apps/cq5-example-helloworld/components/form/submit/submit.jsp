@@ -4,8 +4,8 @@
 <%%>
 <sling:defineObjects />
 <% IResourceService resourceService = sling.getService(IResourceService.class);%> 
-<c:set var="submitText" value="<%= resourceService.getResPropWithDefaultValue(resource, "submitText", "Submit") %>"/>
-<c:set var="submitHint" value="<%= resourceService.getResPropWithDefaultValue(resource, "submitHint", "Submit button hint") %>"/>
+<c:set var="submitText" value="<%= resourceService.getResourceProperty(resource, "submitText") %>"/>
+<c:set var="submitHint" value="<%= resourceService.getResourceProperty(resource, "submitHint") %>"/>
 
 
 <div class="buttons">
