@@ -55,7 +55,14 @@
 			<module>Cq5-example-helloworld-components</module>
 		  	<module>Cq5-example-helloworld-content</module>
 		  </modules>
-	</profile>	
+	</profile>
+
+	<profile>
+		<id>mapping</id>
+		<modules>
+			<module>Cq5-example-helloworld-mapping</module>		  	
+		  </modules>
+	</profile>
   
   </profiles>
   
