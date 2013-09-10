@@ -5,5 +5,5 @@
     cq:lastReplicationAction="Activate"
     jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="sling:Mapping"
-    sling:internalRedirect="[/content/cq5-example-helloworld.html]"
-    sling:match="\[^/]+/cq5-example-helloworld"/>
+    sling:match="\[^/]+/cq5-example-helloworld/(.*)$"
+    sling:internalRedirect="[/content/cq5-example-helloworld/$1]"/>
