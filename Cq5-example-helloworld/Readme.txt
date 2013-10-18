@@ -9,12 +9,19 @@ DESCRIPTION
 
 
 This is Hello World project for CQ. This project consists of two pages:
-- input page: user types here his name;
-- output page: text "Hello World <user_name>" is displayed here.
+- input page		: user types here his name;
+- output page		: text "Hello World <user_name>" is displayed here.
 
 This project shows additionally:
-- validation: user can not send empty name;
-- java script: hints/titles for buttons are handled by jquery
+- validation		: user can not send empty name;
+- java script		: hints/titles for buttons are handled by jquery
+
+This project can be deployed in two different ways. These ways are:
+- Default Content	: already existing default content of project will be deployed on CQ servers here.
+					  This is described in section "Deployment of Default Content";
+- User Own Content	: here user has to first deploy components on CQ servers and then build his
+					  own content from these components. This is described in section "Deployment
+					  of User Own Content". 
 
 
 
@@ -31,67 +38,45 @@ All flexible configuration of project (server`s urls, logins, passwords etc.) ca
 
 
 
-DEPLOYMENT
-==========
+DEPLOYMENT OF DEFAULT CONTENT
+=============================
 
 
-User can deploy project using following maven commands:
-- Author
-  ------	
-* mvn clean install crx:install -Pauthor,components		: installing components on author server
-* mvn clean install crx:install -Pauthor,content		: installing content on author server 
-														  (components are installed automatically)
-- Publish
-  -------
-* mvn clean install crx:install -publish,components		: installing components on publish server
-* mvn clean install crx:install -Ppublish,content		: installing content on publish server 
-														  (components are installed automatically)
+After launching CQ servers and adjusting configuration file "project.properties" user can deploy 
+default content of project using following maven commands:
+- on Author server 
+  mvn clean install crx:install -Pauthor,content
+- on Publish server
+  mvn clean install crx:install -Ppublish,content
+  
+To use this project see section "Usage".
+  
 
-Deployment Template
-Template of maven command looks like:
+  
+  
 
-mvn clean install crx:install -P<location_profile>,<action_profile>
--------------------------------------------------------------------
-
-Location profiles:
-- author				: indicates author server as location
-- publish				: indicates publish server as location
+DEPLOYMENT OF USER OWN CONTENT
+==============================
 
 
-Action profiles:
-- components			: deploys components
-- content				: deploys content
+After launching CQ servers and adjusting configuration file "project.properties" user can deploy 
+his own content by following steps:
 
+Step 1. Deployment of components
+--------------------------------
 
+User can deploy project components using following maven command:
+- on Author server 
+  mvn clean install crx:install -Pauthor,components
+- on Publish server
+  mvn clean install crx:install -Ppublish,components
+  
+Step 2. Creation of user own content
+------------------------------------           	
 
-
-
-USAGE
-=====
-
-
-After deployment user can work with this project using following links:
-
-- Author Server:
-  -------------
-http://localhost:4502/cf#/content/cq5-example-helloworld/en/input.html
-http://localhost:4502/cf#/content/cq5-example-helloworld/en/output.html
-or
-http://localhost:4502/cf#/content/cq5-example-helloworld/pl/wejscie.html
-http://localhost:4502/cf#/content/cq5-example-helloworld/pl/wyjscie.html
-
-- Publish Server:
-  --------------
-http://localhost:4503/content/cq5-example-helloworld.html
-
-
-
-
-
-CONTENT MANUALLY
-================
-
-
+After deployment components on Author CQ server user can build his own content using following 
+project elements:
+ 
 Templates:
 - Hello World - Redirect Template		: template for pages which should not be displayed
 										  but are only part of tree. These pages should redirect to 
@@ -115,3 +100,36 @@ All components are in group "Hello World". User can choose here following compon
 										  text "Hello World";
 - Submit button							: component with submit button. User can set here also hint/title of this
 										  button.
+
+Step 3. Replication content on Publish server
+---------------------------------------------
+
+After creating his own content on Author server user has to replicate his changes to Publish
+server (link "Replication").
+
+Step 4. Usage
+-------------
+
+To use this project see section "Usage".
+										  
+
+
+
+
+USAGE
+=====
+
+
+After deployment user can work with this project using following links:
+
+- Author Server:
+  -------------
+http://localhost:4502/cf#/content/cq5-example-helloworld/en/input.html
+http://localhost:4502/cf#/content/cq5-example-helloworld/en/output.html
+or
+http://localhost:4502/cf#/content/cq5-example-helloworld/pl/wejscie.html
+http://localhost:4502/cf#/content/cq5-example-helloworld/pl/wyjscie.html
+
+- Publish Server:
+  --------------
+http://localhost:4503/content/cq5-example-helloworld.html										  

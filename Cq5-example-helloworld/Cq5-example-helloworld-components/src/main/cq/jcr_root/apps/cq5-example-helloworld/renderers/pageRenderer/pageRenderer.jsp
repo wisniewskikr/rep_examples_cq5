@@ -17,7 +17,7 @@
 <body>
 	<div class="page">
 		<cq:include path="par" resourceType="foundation/components/parsys"/>
-	</div>	
+	</div>		
 </body>
 
 </html>
