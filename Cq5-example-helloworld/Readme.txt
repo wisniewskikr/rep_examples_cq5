@@ -132,7 +132,6 @@ http://localhost:4502/cf#/content/cq5-example-helloworld/pl/wyjscie.html
 
 - Publish Server:
   --------------
-  -------------
 http://localhost:4503/content/cq5-example-helloworld/en/input.html
 http://localhost:4503/content/cq5-example-helloworld/en/output.html
 or
@@ -149,10 +148,12 @@ MAPPING
 
 CQ mapping enables using shorter path in browser. It should be used only on Publish server.
 
-To deploy mapping user can use following maven command:
+To deploy mapping on Publish server user can use following maven command:
 	mvn clean install -Ppublish,mapping
 and then he can use shorter project paths:
 	http://localhost:4503/cq5-example-helloworld
+or
+	http://localhost:4503/cq5-example-helloworld/en
 or
 	http://localhost:4503/cq5-example-helloworld/pl	
 									  
