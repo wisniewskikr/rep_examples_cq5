@@ -23,23 +23,25 @@ public class InputAction {
 		String errorMessage = getErrorMessage(request);
 		if(errorMessage != null) {
 			String currentPagePath = request.getParameter("currentPagePath");
-			response.sendRedirect(currentPagePath + ".html" + errorMessage);
+			String path = request.getResourceResolver().map(currentPagePath);
+			response.sendRedirect(path + ".html" + errorMessage);
 			return;
 		}
 		
-		String pageAfterAction = null;
+		String path = null;
 		
 		try {
 			
 			ValueMap map = resource.adaptTo(ValueMap.class);
-			pageAfterAction = map.get("pageAfterAction", String.class) + ".html";
+			String pageAfterAction = map.get("pageAfterAction", String.class) + ".html";
+			path = request.getResourceResolver().map(pageAfterAction);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
 		
 		String name = request.getParameter("name");
-		response.sendRedirect(pageAfterAction + "?name=" + name);
+		response.sendRedirect(path + "?name=" + name);
 		
 	}
 	

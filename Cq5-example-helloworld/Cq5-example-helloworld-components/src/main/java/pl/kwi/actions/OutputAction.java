@@ -19,18 +19,19 @@ public class OutputAction {
 	 */
 	public void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
 		
-		String pageAfterAction = null;
+		String path = null;
 		
 		try {
 			
 			ValueMap map = resource.adaptTo(ValueMap.class);
-			pageAfterAction = map.get("pageAfterAction", String.class) + ".html";
+			String pageAfterAction = map.get("pageAfterAction", String.class) + ".html";
+			path = request.getResourceResolver().map(pageAfterAction);
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
 		
-		response.sendRedirect(pageAfterAction);
+		response.sendRedirect(path);
 		
 	}
 
