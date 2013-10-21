@@ -6,4 +6,8 @@
     jcr:mixinTypes="[cq:ReplicationStatus]"
     jcr:primaryType="sling:Mapping"
     sling:internalRedirect="[/content/cq5-example-helloworld]"
-    sling:match="localhost.4503/cq5-example-helloworld"/>
+    sling:match="localhost.4503/cq5-example-helloworld">
+    <home/>
+    <home_en/>
+    <home_pl/>
+</jcr:root>
