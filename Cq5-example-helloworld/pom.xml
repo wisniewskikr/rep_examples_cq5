@@ -63,6 +63,15 @@
 			<module>Cq5-example-helloworld-mapping</module>		  	
 		  </modules>
 	</profile>
+	
+	<profile>
+		<id>full</id>
+		<modules>
+			<module>Cq5-example-helloworld-components</module>
+		  	<module>Cq5-example-helloworld-content</module>
+		  	<module>Cq5-example-helloworld-mapping</module>
+		  </modules>
+	</profile>
   
   </profiles>
   

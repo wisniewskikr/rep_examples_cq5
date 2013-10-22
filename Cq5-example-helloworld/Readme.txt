@@ -21,7 +21,21 @@ This project can be deployed in two different ways. These ways are:
 					  This is described in section "Deployment of Default Content";
 - User Own Content	: here user has to first deploy components on CQ servers and then build his
 					  own content from these components. This is described in section "Deployment
-					  of User Own Content". 
+					  of User Own Content".
+
+Recommended deployment of project:
+----------------------
+- on Author server
+  mvn clean install crx:install -Pauthor,full
+- on Publish server
+  mvn clean install crx:install -Ppublish,full 
+  
+Recommended usage of project:
+-----------------
+- English language: 
+  http://localhost:4503/cq5-example-helloworld/en
+- Polish language:
+  http://localhost:4503/cq5-example-helloworld/pl   
 
 
 
