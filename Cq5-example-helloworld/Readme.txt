@@ -26,9 +26,9 @@ This project can be deployed in two different ways. These ways are:
 Recommended deployment of project:
 ----------------------------------
 - on Author server
-  mvn clean install crx:install -Pauthor,full
+  mvn clean install crx:install -Pdeploy_author
 - on Publish server
-  mvn clean install crx:install -Ppublish,full 
+  mvn clean install crx:install -Pdeploy_publish 
   
 Recommended usage of project:
 -----------------------------
