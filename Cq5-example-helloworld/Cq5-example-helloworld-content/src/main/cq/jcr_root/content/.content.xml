@@ -11,8 +11,6 @@
     <usergenerated/>
     <wiki/>
     <rep:policy/>
-    <webapp/>
-    <intg/>
-    <accept/>
+    <example/>
     <cq5-example-helloworld/>
 </jcr:root>

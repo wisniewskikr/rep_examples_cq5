@@ -7,10 +7,11 @@
     jcr:primaryType="cq:Template"
     jcr:title="Hello World - Page Template"
     jcr:description="Template of Page for Hello World project"
-    allowedPaths="/content/cq5-example-helloworld(/.*)?"
+    allowedPaths="/content(/.*)?"
     ranking="{Long}2">
     
     <jcr:content
+    	cq:designPath="/etc/designs/webapp"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="cq5-example-helloworld/renderers/pageRenderer"/>
                 
