@@ -1,12 +1,8 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.services.intf.IResourceService" %>
-<%%>
 <c:set var="name" value="<%=request.getParameter("name")%>"/>
-<%%>
-<sling:defineObjects />
-<% IResourceService resourceService =   sling.getService(IResourceService.class);%> 
-<c:set var="helloWorldText" value="<%= resourceService.getResourceProperty(resource, "helloWorldText")%>"/>
+<c:set var="helloWorldText" value="<%= currentNode.getProperty("helloWorldText").getString() %>"/>
+
 
 
 <div class="content">
@@ -16,4 +12,3 @@
 		<div>&nbsp;</div>
 	</div>	
 </div>
-

@@ -1,12 +1,8 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<%@page import="pl.kwi.services.intf.IResourceService" %>
-<%%>
-<sling:defineObjects />
-<% IResourceService resourceService = sling.getService(IResourceService.class);%> 
-<c:set var="textPage" value="<%= resourceService.getResourceProperty(resource, "textPage")%>"/>
-<c:set var="pageName" value="<%= resourceService.getResourceProperty(resource, "pageName")%>"/>
+<c:set var="textPage" value="<%= currentNode.getProperty("textPage").getString() %>"/>
+<c:set var="pageName" value="<%= currentNode.getProperty("pageName").getString() %>"/>
+
 
 
 <div class="subtitle"><h3 id="subtitle">${textPage}: <b>${pageName}</b></h3></div>
-

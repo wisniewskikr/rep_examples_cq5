@@ -1,16 +1,11 @@
-<%@page import="pl.kwi.services.impl.ResourceService"%>
 <%@include file="/libs/foundation/global.jsp" %>
-<%%>
-<%@page import="pl.kwi.services.intf.IResourceService" %>
 <%%>
 <c:set var="currentPagePath" value="<%= currentPage.getPath() %>"/>
 <c:set var="errorField" value="<%= request.getParameter("errorField") %>"/>
-<%%>
-<sling:defineObjects />
-<% IResourceService resourceService =   sling.getService(IResourceService.class);%> 
-<c:set var="nameText" value="<%= resourceService.getResourceProperty(resource, "nameText") %>"/>
-<c:set var="nameErrorMessage" value="<%= resourceService.getResourceProperty(resource, "nameErrorMessage") %>"/>
-<c:set var="nameDescription" value="<%= resourceService.getResourceProperty(resource, "nameDescription") %>"/>
+<c:set var="nameText" value="<%= currentNode.getProperty("nameText").getString() %>"/>
+<c:set var="nameErrorMessage" value="<%= currentNode.getProperty("nameErrorMessage").getString() %>"/>
+<c:set var="nameDescription" value="<%= currentNode.getProperty("nameDescription").getString() %>"/>
+
 
 
 <div class="content">
@@ -27,4 +22,3 @@
 	</div>
 	
 </div>
-
