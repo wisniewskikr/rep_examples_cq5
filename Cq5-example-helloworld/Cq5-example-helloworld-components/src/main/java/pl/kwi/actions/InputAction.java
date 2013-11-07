@@ -9,6 +9,10 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 
 public class InputAction {
+	
+	
+	private InputAction() {}
+	
 
 	/**
 	 * Method handles action from Input page.
@@ -18,7 +22,7 @@ public class InputAction {
 	 * @param resource object <code>Resource</code> with current page resource
 	 * @throws IOException
 	 */
-	public void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
+	public static void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
 		
 		String errorMessage = getErrorMessage(request);
 		if(errorMessage != null) {
@@ -51,7 +55,7 @@ public class InputAction {
 	 * @param request object SlingHttpServletRequest with request from browser
 	 * @return object String with error field name
 	 */
-	protected String getErrorMessage(SlingHttpServletRequest request) {
+	protected static String getErrorMessage(SlingHttpServletRequest request) {
 				
 		StringBuilder sb = new StringBuilder();		
 		

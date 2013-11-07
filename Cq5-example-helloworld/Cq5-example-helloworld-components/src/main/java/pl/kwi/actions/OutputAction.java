@@ -8,6 +8,10 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ValueMap;
 
 public class OutputAction {
+	
+	
+	private OutputAction() {}
+	
 
 	/**
 	 * Method handles action from Output page.
@@ -17,7 +21,7 @@ public class OutputAction {
 	 * @param resource object <code>Resource</code> with current page resource
 	 * @throws IOException
 	 */
-	public void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
+	public static void handleAction(SlingHttpServletRequest request, SlingHttpServletResponse response, Resource resource) throws IOException {
 		
 		String path = null;
 		
