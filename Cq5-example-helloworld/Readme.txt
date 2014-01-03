@@ -1,3 +1,6 @@
+- dodac obrazki w wyborze template
+- dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
+
 CQ5 AND EXAMPLE HELLO WORLD
 
 
