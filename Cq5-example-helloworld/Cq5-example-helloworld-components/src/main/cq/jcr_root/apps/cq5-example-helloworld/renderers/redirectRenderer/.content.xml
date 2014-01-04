@@ -3,6 +3,12 @@
 	xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
 	xmlns:cq="http://www.day.com/jcr/cq/1.0" 
 	xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<<<<<<< HEAD
     jcr:primaryType="cq:Component"
+=======
+    jcr:description="Redirect Template Page Renderer"
+    jcr:primaryType="cq:Component"
+    jcr:title="Redirect Template Page Renderer"
+>>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190
     sling:resourceSuperType="foundation/components/page"
     componentGroup=".hidden"/>

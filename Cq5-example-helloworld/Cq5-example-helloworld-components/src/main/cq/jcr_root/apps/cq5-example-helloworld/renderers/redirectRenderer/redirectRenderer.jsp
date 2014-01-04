@@ -5,6 +5,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 
+<<<<<<< HEAD
 
 <head>
 	<title>Hello World</title>
@@ -20,6 +21,11 @@
 	</div>		
 </body>
 
+=======
+	<cq:include script="head.jsp"/>
+	<cq:include script="body.jsp"/>
+	
+>>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190
 </html>
 
 

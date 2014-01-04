@@ -7,7 +7,11 @@
 
 
 <head>
+<<<<<<< HEAD:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/renderers/inputRenderer/inputRenderer.jsp
 	<title>Hello World - Input</title>
+=======
+	<title>Hello World</title>
+>>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/renderers/pageRenderer/pageRenderer.jsp
 	<cq:includeClientLib js="myproject.all" />
 	<cq:includeClientLib css="myproject.all" />
 </head>
