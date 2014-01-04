@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 - dodac obrazki w wyborze template
 - dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
 
-=======
->>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190
 CQ5 AND EXAMPLE HELLO WORLD
 
 

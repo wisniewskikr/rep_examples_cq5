@@ -10,7 +10,6 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="webapp"
         sling:resourceType="wcm/core/components/designer">
-<<<<<<< HEAD
         <inputRenderer jcr:primaryType="nt:unstructured">
         	<par
                 jcr:primaryType="nt:unstructured"
@@ -23,13 +22,5 @@
                 sling:resourceType="foundation/components/parsys"                
                 components="[group:Hello World - Output]"/>
         </outputRenderer>      
-=======
-        <pageRenderer jcr:primaryType="nt:unstructured">
-        	<par
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="foundation/components/parsys"                
-                components="[group:Hello World]"/>
-        </pageRenderer>      
->>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190
     </jcr:content>    
 </jcr:root>

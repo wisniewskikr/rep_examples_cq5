@@ -5,23 +5,14 @@
 	xmlns:jcr="http://www.jcp.org/jcr/1.0" 
 	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"    
     jcr:primaryType="cq:Template"
-<<<<<<< HEAD:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/templates/inputTemplate/.content.xml
     jcr:title="Hello World - Input Template"
     jcr:description="Template of Input Page for Hello World project"
-=======
-    jcr:title="Hello World - Page Template"
-    jcr:description="Template of Page for Hello World project"
->>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/templates/pageTemplate/.content.xml
     allowedPaths="/content(/.*)?"
     ranking="{Long}2">
     
     <jcr:content
     	cq:designPath="/etc/designs/webapp"
         jcr:primaryType="cq:PageContent"
-<<<<<<< HEAD:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/templates/inputTemplate/.content.xml
         sling:resourceType="cq5-example-helloworld/renderers/inputRenderer"/>
-=======
-        sling:resourceType="cq5-example-helloworld/renderers/pageRenderer"/>
->>>>>>> 9e1c85aefddedf0b89b910f3c1c476cace39c190:Cq5-example-helloworld/Cq5-example-helloworld-components/src/main/cq/jcr_root/apps/cq5-example-helloworld/templates/pageTemplate/.content.xml
                 
 </jcr:root>

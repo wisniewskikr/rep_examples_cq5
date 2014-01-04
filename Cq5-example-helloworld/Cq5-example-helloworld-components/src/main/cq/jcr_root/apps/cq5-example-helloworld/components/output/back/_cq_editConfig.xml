@@ -7,6 +7,6 @@
     <cq:dropTargets jcr:primaryType="cq:DropTargetConfig"/>
     <cq:formParameters
     	jcr:primaryType="nt:unstructured"
-        textSubmit="Submit"
-        submitHint="Go to next page"/>
+        textBack="Back"
+        backHint="Go back to previous page"/>
 </jcr:root>
