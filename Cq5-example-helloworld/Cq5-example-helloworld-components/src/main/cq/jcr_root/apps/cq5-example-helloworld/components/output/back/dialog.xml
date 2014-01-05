@@ -13,6 +13,11 @@
             fieldLabel="Button 'Back' hint"                       
             name="./backHint"
             jcr:primaryType="cq:Widget"
-            xtype="textfield" />                                                  
+            xtype="textfield" /> 
+       <backTarget
+            fieldLabel="Button 'Back' target"                       
+            name="./backTarget"
+            jcr:primaryType="cq:Widget"
+            xtype="pathfield" />                                                       
     </items>
 </jcr:root>
