@@ -6,9 +6,8 @@
 
 
 <div class="content">
-	<div class="contentElement">
+	<div class="contentElementOutput">
 		<div>&nbsp;</div>
 		<div class="text" id="textHelloWorld"> ${textHelloWorld} <b id="name">${name}</b> </div>
-		<div>&nbsp;</div>
 	</div>	
 </div>

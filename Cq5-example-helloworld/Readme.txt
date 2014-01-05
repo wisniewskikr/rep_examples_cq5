@@ -1,7 +1,12 @@
+- stworzyc example-contnent
+- poprawic profile
+- poprawic mappingi
+
 - dodac obrazki w wyborze template
 - dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
 - dodac mozliwosc, ze na template mozna dodac komponenty tylko w odpowiednie miejsca
 - dodac wyswietlanie komunikatu, ze brak zdefiniowanej akcji lub targetu
+- dodac wyswietlanie domyslnego obrazku
 
 CQ5 AND EXAMPLE HELLO WORLD
 

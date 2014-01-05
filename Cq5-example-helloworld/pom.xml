@@ -65,25 +65,7 @@
 	</profile>
 	
 	<profile>
-		<id>deploy_author</id>
-		<properties>							
-			<crx.url>${author.crx.url}</crx.url>
-			<crx.user>${author.crx.user}</crx.user>
-  			<crx.password>${author.crx.password}</crx.password>				
-		</properties>
-		<modules>
-			<module>Cq5-example-helloworld-components</module>
-		  	<module>Cq5-example-helloworld-content</module>
-		  </modules>
-	</profile>
-	
-	<profile>
-		<id>deploy_publish</id>
-		<properties>							
-			<crx.url>${publish.crx.url}</crx.url>
-			<crx.user>${publish.crx.user}</crx.user>
-  			<crx.password>${publish.crx.password}</crx.password>			
-		</properties>
+		<id>full</id>
 		<modules>
 			<module>Cq5-example-helloworld-components</module>
 		  	<module>Cq5-example-helloworld-content</module>

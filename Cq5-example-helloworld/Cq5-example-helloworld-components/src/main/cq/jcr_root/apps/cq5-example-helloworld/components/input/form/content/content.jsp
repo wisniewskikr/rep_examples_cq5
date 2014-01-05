@@ -12,7 +12,7 @@
 
 	<input type="hidden" id="currentPagePath" name="currentPagePath" value="${currentPagePath}"/>
 
-	<div class="contentElement">
+	<div class="contentElementInput">
 		<div class="text">
 			${textName} * 
 			<c:if test="${errorField == 'name'}"><span class="error" id="nameErrorMessage">${nameErrorMessage}</span></c:if>

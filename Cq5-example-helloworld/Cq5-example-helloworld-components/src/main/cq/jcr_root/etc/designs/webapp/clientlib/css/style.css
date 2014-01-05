@@ -19,9 +19,14 @@
 	margin-bottom: 20px;
 }
 
-.contentElement {
+.contentElementInput {
 	text-align: left;
 	height: 80px;
+}
+
+.contentElementOutput {
+	text-align: left;
+	height: 25px;
 }
 
 .text {
@@ -62,4 +67,16 @@
 
 form div.section {
 	padding-bottom: 0px !important;
+}
+
+.helloImage {	
+	text-align: center;
+}
+
+.helloImage img {
+	display: inline !important;
+}
+
+div.page div.image {
+	margin-bottom: 0px !important;
 }
