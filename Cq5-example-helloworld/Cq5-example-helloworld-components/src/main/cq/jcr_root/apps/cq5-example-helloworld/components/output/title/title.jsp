@@ -1,6 +1,6 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<c:set var="textHelloWorld" value="<%= currentNode.getProperty("textHelloWorld").getString() %>"/>
+<c:set var="textHelloWorld" value="<%= properties.get("textHelloWorld") %>"/>
 
 
 

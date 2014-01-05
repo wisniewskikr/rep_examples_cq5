@@ -1,7 +1,7 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<c:set var="textBack" value="<%= currentNode.getProperty("textBack").getString() %>"/>
-<c:set var="backHint" value="<%= currentNode.getProperty("backHint").getString() %>"/>
+<c:set var="textBack" value="<%= properties.get("textBack") %>"/>
+<c:set var="backHint" value="<%= properties.get("backHint") %>"/>
 <c:set var="backTarget" value="<%= properties.get("backTarget", currentPage.getPath()) %>"/>
 
 
