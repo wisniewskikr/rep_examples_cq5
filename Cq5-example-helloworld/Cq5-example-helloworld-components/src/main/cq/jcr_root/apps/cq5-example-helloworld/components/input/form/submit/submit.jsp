@@ -1,7 +1,7 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<c:set var="textSubmit" value="<%= currentNode.getProperty("textSubmit").getString() %>"/>
-<c:set var="submitHint" value="<%= currentNode.getProperty("submitHint").getString() %>"/>
+<c:set var="textSubmit" value="<%= properties.get("textSubmit") %>"/>
+<c:set var="submitHint" value="<%= properties.get("submitHint") %>"/>
 
 
 

@@ -2,9 +2,9 @@
 <%%>
 <c:set var="currentPagePath" value="<%= currentPage.getPath() %>"/>
 <c:set var="errorField" value="<%= request.getParameter("errorField") %>"/>
-<c:set var="textName" value="<%= currentNode.getProperty("textName").getString() %>"/>
-<c:set var="nameErrorMessage" value="<%= currentNode.getProperty("nameErrorMessage").getString() %>"/>
-<c:set var="nameDescription" value="<%= currentNode.getProperty("nameDescription").getString() %>"/>
+<c:set var="textName" value="<%= properties.get("textName") %>"/>
+<c:set var="nameErrorMessage" value="<%= properties.get("nameErrorMessage") %>"/>
+<c:set var="nameDescription" value="<%= properties.get("nameDescription") %>"/>
 
 
 

@@ -1,7 +1,7 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<c:set var="textPage" value="<%= currentNode.getProperty("textPage").getString() %>"/>
-<c:set var="textInput" value="<%= currentNode.getProperty("textInput").getString() %>"/>
+<c:set var="textPage" value="<%= properties.get("textPage") %>"/>
+<c:set var="textInput" value="<%= properties.get("textInput") %>"/>
 
 
 
