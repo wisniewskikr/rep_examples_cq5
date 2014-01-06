@@ -2,7 +2,7 @@
 <%%>
 <c:set var="textBack" value="<%= properties.get("textBack") %>"/>
 <c:set var="backHint" value="<%= properties.get("backHint") %>"/>
-<c:set var="backTarget" value="<%= properties.get("backTarget", currentPage.getPath()) %>"/>
+<c:set var="backTarget" value="<%= resourceResolver.map(properties.get("backTarget", currentPage.getPath())) %>"/>
 
 
 
