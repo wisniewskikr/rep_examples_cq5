@@ -192,6 +192,8 @@ TODO
 ====
 
 - dodac obrazki w wyborze template
+- dodac template projektu
+- dodac template language
 - dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
 - dodac mozliwosc, ze na template mozna dodac komponenty tylko w odpowiednie miejsca
 - dodac wyswietlanie komunikatu, ze brak zdefiniowanej akcji lub targetu
