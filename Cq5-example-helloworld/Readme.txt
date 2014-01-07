@@ -1,13 +1,3 @@
-- stworzyc example-contnent
-- poprawic profile
-- poprawic mappingi
-
-- dodac obrazki w wyborze template
-- dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
-- dodac mozliwosc, ze na template mozna dodac komponenty tylko w odpowiednie miejsca
-- dodac wyswietlanie komunikatu, ze brak zdefiniowanej akcji lub targetu
-- dodac wyswietlanie domyslnego obrazku
-
 CQ5 AND EXAMPLE HELLO WORLD
 
 
@@ -22,23 +12,20 @@ This is Hello World project for CQ. This project consists of two pages:
 - input page		: user types here his name;
 - output page		: text "Hello World <user_name>" is displayed here.
 
+
 This project shows additionally:
 - validation		: user can not send empty name;
 - java script		: hints/titles for buttons are handled by jquery
+- dam				: duke image shows how to use Digital Assets Management (DAM)
 
-This project can be deployed in two different ways. These ways are:
-- Default Content	: already existing default content of project will be deployed on CQ servers here.
-					  This is described in section "Deployment of Default Content";
-- User Own Content	: here user has to first deploy components on CQ servers and then build his
-					  own content from these components. This is described in section "Deployment
-					  of User Own Content".
 
 Recommended deployment of project:
 ----------------------------------
 - on Author server
-  mvn clean install crx:install -Pdeploy_author
+  mvn clean install crx:install -Pauthor,full
 - on Publish server
-  mvn clean install crx:install -Pdeploy_publish 
+  mvn clean install crx:install -Ppublish,full 
+
   
 Recommended usage of project:
 -----------------------------
@@ -61,6 +48,21 @@ All flexible configuration of project (server`s urls, logins, passwords etc.) ca
 
 
 
+
+DEPLOYMENT
+==========
+
+
+This project can be deployed in two different ways. These ways are:
+- Default Content	: already existing default content of project will be deployed on CQ servers here.
+					  This is described in section "Deployment of Default Content";
+- User Own Content	: here user has to first deploy components on CQ servers and then build his
+					  own content from these components. This is described in section "Deployment
+					  of User Own Content".
+					  
+					  
+					  
+					  
 
 DEPLOYMENT OF DEFAULT CONTENT
 =============================
@@ -180,4 +182,17 @@ or
 	http://localhost:4503/cq5-example-helloworld/en
 or
 	http://localhost:4503/cq5-example-helloworld/pl	
-									  
+	
+	
+	
+	
+	
+	
+TODO
+====
+
+- dodac obrazki w wyborze template
+- dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
+- dodac mozliwosc, ze na template mozna dodac komponenty tylko w odpowiednie miejsca
+- dodac wyswietlanie komunikatu, ze brak zdefiniowanej akcji lub targetu
+- dodac wyswietlanie domyslnego obrazku									  
