@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root 
+	xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+	xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+	xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"    
+    jcr:primaryType="cq:Template"
+    jcr:title="Hello World - Project Root Template"
+    jcr:description="Template of page which should be project root for Hello World project. Recomended name is 'Cq5-example-helloworld'"
+    allowedPaths="[/content(/.*)?]"
+    allowedChildren="[/apps/cq5-example-helloworld/templates/languageRootTemplate]"
+    ranking="{Long}1">
+    
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="cq5-example-helloworld/renderers/projectRootRenderer"/>
+                
+</jcr:root>
