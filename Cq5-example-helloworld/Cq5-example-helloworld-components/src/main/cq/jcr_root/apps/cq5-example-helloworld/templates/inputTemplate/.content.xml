@@ -8,8 +8,8 @@
     jcr:title="Hello World - Input Template"
     jcr:description="Template of Input Page for Hello World project"
     allowedPaths="[/content(/.*)?]"
-    allowedParents="[cq5-example-helloworld/templates/languageRootTemplate]"    
-    ranking="{Long}2">
+    allowedParents="[/apps/cq5-example-helloworld/templates/languageRootTemplate]"    
+    ranking="{Long}1">
     
     <jcr:content
     	cq:designPath="/etc/designs/webapp"

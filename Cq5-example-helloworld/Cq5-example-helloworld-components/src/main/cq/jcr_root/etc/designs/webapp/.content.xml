@@ -14,7 +14,8 @@
         	<par
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/parsys"                
-                components="[group:Hello World - Input]"/>
+                components="[group:Hello World - Input]">
+             </par>   
         </inputRenderer> 
         <outputRenderer jcr:primaryType="nt:unstructured">
         	<par
