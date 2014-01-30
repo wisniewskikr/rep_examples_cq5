@@ -12,6 +12,7 @@
     ranking="{Long}1">
     
     <jcr:content
+    	cq:designPath="/etc/designs/webapp"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="cq5-example-helloworld/renderers/projectRootRenderer"/>
                 

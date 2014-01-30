@@ -159,6 +159,20 @@
 	    	<version>1.2.0</version>
 		</dependency>
 		
+		<!-- Dependencies with Page, PageManager etc. -->
+		<dependency>
+			<groupId>com.day.cq.wcm</groupId>
+			<artifactId>cq-wcm-api</artifactId>
+			<version>5.4.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.day.cq</groupId>
+			<artifactId>cq-commons</artifactId>
+			<version>5.4.6</version>
+			<scope>provided</scope>
+		</dependency>
+		
 		<!-- Dependencies with StringUtils
 		Attention!!! 
 		It has to be added to CQ by "install" folder -->
