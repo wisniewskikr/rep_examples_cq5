@@ -14,44 +14,44 @@
         	<titleParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Title' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Title' component here"               
                 components="[/apps/cq5-example-helloworld/components/input/title]"/>
             <subtitleParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Subitle' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Subitle' component here"               
                 components="[/apps/cq5-example-helloworld/components/input/subtitle]"/>  
              <formParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Form' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Form' component here"               
                 components="[/apps/cq5-example-helloworld/components/input/form/start,/apps/cq5-example-helloworld/components/input/form/content,/apps/cq5-example-helloworld/components/input/form/submit]"/>      
         </inputRenderer> 
         <outputRenderer jcr:primaryType="nt:unstructured">
         	<titleParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Title' component from group 'Hello World - Output' here"               
+                cq:emptyText="Drag 'Title' component here"               
                 components="[/apps/cq5-example-helloworld/components/output/title]"/>
             <subtitleParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Subitle' component from group 'Hello World - Output' here"               
+                cq:emptyText="Drag 'Subitle' component here"               
                 components="[/apps/cq5-example-helloworld/components/output/subtitle]"/> 
             <contentParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Content' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Content' component here"               
                 components="[/apps/cq5-example-helloworld/components/output/content]"/> 
             <imageParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Image' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Image' component here"               
                 components="[/apps/cq5-example-helloworld/components/output/image]"/> 
             <backParsys                
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys" 
-                cq:emptyText="Drag 'Back' component from group 'Hello World - Input' here"               
+                cq:emptyText="Drag 'Back' component here"               
                 components="[/apps/cq5-example-helloworld/components/output/back]"/>            
         </outputRenderer>      
     </jcr:content>    

@@ -4,4 +4,14 @@
 
 
 
-<div class="helloImage"><img id="duke" alt="duke" src="${fileReference}"></div>
+<div class="helloImage">
+	<c:choose>
+		<c:when test="${not empty fileReference}">
+			<img id="duke" alt="duke" src="${fileReference}">
+		</c:when>
+		<c:otherwise>
+			<img id="duke" alt="duke" src="/libs/cq/ui/widgets/themes/default/placeholders/img.png">
+		</c:otherwise>
+	</c:choose>	
+	
+</div>
