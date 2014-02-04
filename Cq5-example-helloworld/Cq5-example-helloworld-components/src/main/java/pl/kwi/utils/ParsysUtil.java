@@ -1,4 +1,4 @@
-package pl.kwi.parsys.utils;
+package pl.kwi.utils;
 
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
