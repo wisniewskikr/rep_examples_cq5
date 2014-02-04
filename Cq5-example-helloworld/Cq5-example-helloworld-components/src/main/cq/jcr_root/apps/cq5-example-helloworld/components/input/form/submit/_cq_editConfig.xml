@@ -9,4 +9,9 @@
     	jcr:primaryType="nt:unstructured"
         textSubmit="Submit"
         submitHint="Go to next page"/>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        aftercopy="REFRESH_PAGE"
+        afterdelete="REFRESH_PAGE"
+        afterinsert="REFRESH_PAGE"/>     
 </jcr:root>

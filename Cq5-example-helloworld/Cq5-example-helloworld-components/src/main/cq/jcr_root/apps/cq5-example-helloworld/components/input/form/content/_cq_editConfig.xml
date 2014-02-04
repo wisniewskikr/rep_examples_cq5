@@ -10,4 +10,9 @@
         textName="Name"
         nameErrorMessage="Please fill this field"
         nameDescription="Type your name here"/>
+     <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        aftercopy="REFRESH_PAGE"
+        afterdelete="REFRESH_PAGE"
+        afterinsert="REFRESH_PAGE"/>    
 </jcr:root>
