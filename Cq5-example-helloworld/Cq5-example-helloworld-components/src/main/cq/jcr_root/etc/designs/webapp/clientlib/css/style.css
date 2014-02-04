@@ -80,3 +80,12 @@ form div.section {
 div.page div.image {
 	margin-bottom: 0px !important;
 }
+
+.errorMessages {
+	font-size: 12px;
+	background: #FFA3A3;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px 5px 5px 5px;
+}
