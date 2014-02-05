@@ -10,7 +10,7 @@
 			<img id="duke" alt="duke" src="${fileReference}">
 		</c:when>
 		<c:otherwise>
-			<img id="duke" alt="duke" src="/libs/cq/ui/widgets/themes/default/placeholders/img.png">
+			<img id="duke" alt="duke" src="/apps/cq5-example-helloworld/components/output/image/duke.jpg">
 		</c:otherwise>
 	</c:choose>	
 	

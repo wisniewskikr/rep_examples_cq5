@@ -63,7 +63,7 @@
                  
 <c:set var="modelContent" value="<%=FormUtil.getModelWithResultComponentExist(resource, "content")%>"/>                 
 <c:if test="${!modelContent.componentExists}">
-	<div class="errorMessages">Please add mandatory form`s component: "Form - Contnent"</div>
+	<div class="errorMessages">Please add mandatory form`s component: "Form - Content"</div>
 </c:if>
 
 <c:set var="modelSubmit" value="<%=FormUtil.getModelWithResultComponentExist(resource, "submit")%>"/>                 
