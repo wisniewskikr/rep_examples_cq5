@@ -1,3 +1,8 @@
+- dodac obrazki do templatow;
+- poprawic opis input i output templatow;
+
+
+
 CQ5 AND EXAMPLE HELLO WORLD
 
 
