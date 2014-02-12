@@ -16,15 +16,8 @@
 
 <body>
 	<div class="page">
-		<cq:include path="titleParsys" resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys"/>
-		<cq:include path="subtitleParsys" resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys"/>
-		<cq:include path="contentParsys" resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys"/>
-		<cq:include path="imageParsys" resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys"/>
-		<cq:include path="backParsys" resourceType="cq5-example-helloworld/components/parsys/emptyTextParsys"/>
+		<cq:include path="par" resourceType="foundation/components/parsys"/>
 	</div>		
 </body>
 
 </html>
-
-
-
