@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/webapp"
+        cq:lastModified="{Date}2014-02-13T08:49:40.175+01:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/cq5-example-helloworld/templates/outputTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="output"
+        sling:resourceType="cq5-example-helloworld/renderers/outputRenderer">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <title
+                jcr:created="{Date}2014-02-13T08:31:45.755+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-13T08:31:45.755+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/output/title"
+                textHelloWorld="Hello World"/>
+            <subtitle
+                jcr:created="{Date}2014-02-13T08:31:47.637+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-13T08:31:47.637+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/output/subtitle"
+                textOutput="Output"
+                textPage="Page"/>
+            <content
+                jcr:created="{Date}2014-02-13T08:31:50.669+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-13T08:31:50.669+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/output/content"
+                textHelloWorld="Hello World"/>
+            <image
+                jcr:created="{Date}2014-02-13T08:31:53.341+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-13T08:49:40.172+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/output/image"
+                fileReference="/content/dam/Cq5-example-helloworld/duke.jpg"/>
+            <back
+                jcr:created="{Date}2014-02-13T08:31:56.358+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-02-13T08:32:07.794+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq5-example-helloworld/components/output/back"
+                backHint="Go back to previous page"
+                backTarget="/content/cq5-example-helloworld/en/input"
+                textBack="Back"/>
+        </par>
+    </jcr:content>
+</jcr:root>
