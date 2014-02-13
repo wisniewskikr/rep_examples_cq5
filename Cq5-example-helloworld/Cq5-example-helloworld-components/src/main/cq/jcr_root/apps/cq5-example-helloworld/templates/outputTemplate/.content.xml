@@ -6,7 +6,7 @@
 	xmlns:nt="http://www.jcp.org/jcr/nt/1.0"    
     jcr:primaryType="cq:Template"
     jcr:title="Hello World - Output Template"
-    jcr:description="Template of Output Page for Hello World project"
+    jcr:description="Template of Output Page for Hello World project. Recommended english name is 'output'"
     allowedPaths="[/content(/.*)?]"
     allowedParents="[/apps/cq5-example-helloworld/templates/languageRootTemplate]" 
     ranking="{Long}2">
