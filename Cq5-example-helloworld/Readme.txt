@@ -181,20 +181,4 @@ and then he can use shorter project paths:
 or
 	http://localhost:4503/cq5-example-helloworld/en
 or
-	http://localhost:4503/cq5-example-helloworld/pl	
-	
-	
-	
-	
-	
-	
-TODO
-====
-
-- dodac obrazki w wyborze template
-- dodac template projektu
-- dodac template language
-- dodac mozliwosc, ze page tempaltes tylko z poziomu redirect template
-- dodac mozliwosc, ze na template mozna dodac komponenty tylko w odpowiednie miejsca
-- dodac wyswietlanie komunikatu, ze brak zdefiniowanej akcji lub targetu
-- dodac wyswietlanie domyslnego obrazku									  
+	http://localhost:4503/cq5-example-helloworld/pl								  
