@@ -11,7 +11,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Cq5 Example Hello World - Reactor Project</name>
+    <name>Cq5 Example Hello World</name>
     <description>Maven Multimodule project for Cq5 Example Hello World.</description>
 
     <prerequisites>
@@ -136,6 +136,8 @@
     <!-- ====================================================================== -->
     <profiles>
     
+        <!-- Profile "bundle" - builds package with only
+        java classes -->
         <profile>
             <id>bundle</id>
             <modules>
@@ -143,6 +145,8 @@
     		</modules>	
         </profile>
         
+        <!-- Profile "app" - builds package with
+        application. Includes bundle -->
         <profile>
             <id>app</id>
             <activation>
@@ -154,6 +158,8 @@
     		</modules>	
         </profile>
         
+        <!-- Profile "content" - builds package with
+        example content -->
         <profile>
             <id>content</id>
             <modules>
@@ -161,6 +167,19 @@
     		</modules>	
         </profile>
         
+        <!-- Profile "full" - builds packages with
+        application (includes bundle) and example content -->
+        <profile>
+            <id>full</id>
+            <modules>
+            	<module>Cq5-example-helloworld-bundle</module>
+    			<module>Cq5-example-helloworld-app</module>
+    			<module>Cq5-example-helloworld-content</module>
+    		</modules>	
+        </profile>
+        
+        <!-- Profile "localAuthor" - indicates Author CQ server
+        on local machine -->
         <profile>
 	      <id>localAuthor</id>
 	      <activation>
@@ -174,6 +193,8 @@
 	      </properties>
 	    </profile>
 	    
+	    <!-- Profile "localPublish" - indicates Publish CQ server
+        on local machine -->
 	    <profile>
 	      <id>localPublish</id> 
 	      <properties> 
