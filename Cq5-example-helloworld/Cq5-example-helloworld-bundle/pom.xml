@@ -46,7 +46,7 @@
                 <configuration>
                     <instructions>
                         <Bundle-SymbolicName>pl.kwi.Cq5-example-helloworld-bundle</Bundle-SymbolicName>
-                        <Sling-Model-Packages>pl.kwi.model.input</Sling-Model-Packages>
+                        <Sling-Model-Packages>pl.kwi.model</Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>
