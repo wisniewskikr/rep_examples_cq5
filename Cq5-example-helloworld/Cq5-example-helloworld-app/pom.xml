@@ -52,15 +52,15 @@
                 <extensions>true</extensions>
                 <configuration>
                     <group>pl.kwi</group>
-                    <filterSource>src/main/content/META-INF/vault/filter.xml</filterSource>
+                    <filterSource>src/main/content/filter.xml</filterSource>
+                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>Cq5-example-helloworld-bundle</artifactId>
                             <target>/apps/cq5-example-helloworld/install</target>
                         </embedded>
-                    </embeddeds>
-                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                    </embeddeds>                    
                 </configuration>
             </plugin>
         </plugins>
