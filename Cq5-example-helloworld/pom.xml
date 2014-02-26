@@ -25,6 +25,7 @@
     <properties>        
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <project.filterSource>src/main/content/filter.xml</project.filterSource>
     </properties>
     
     
@@ -89,6 +90,9 @@
                     <version>0.0.20</version>
                     <extensions>true</extensions>
                     <configuration>
+                    	<group>${project.groupId}</group>
+                    	<filterSource>${project.filterSource}</filterSource>
+                    	<targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
                         <failOnError>true</failOnError>
                         <username>${crx.username}</username>
                         <password>${crx.password}</password>

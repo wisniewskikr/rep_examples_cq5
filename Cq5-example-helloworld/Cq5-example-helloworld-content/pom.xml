@@ -49,12 +49,7 @@
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <group>pl.kwi</group>
-                    <filterSource>src/main/content/filter.xml</filterSource>                  
-                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
-                </configuration>
+                <extensions>true</extensions>                
             </plugin>
         </plugins>
     </build>
