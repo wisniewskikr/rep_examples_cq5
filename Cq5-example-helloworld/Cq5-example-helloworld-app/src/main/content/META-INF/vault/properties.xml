@@ -7,7 +7,7 @@
 <entry key="dependencies" />
 <entry key="packageFormatVersion">2</entry>
 <entry key="description">Cq5 Example Hello World Package</entry>
-<entry key="group">Pl Kwi</entry>
-<entry key="name">Cq5-example-helloworld-content</entry>
-<entry key="path">/etc/packages/Pl Kwi/Cq5-example-helloworld-content-1.0-SNAPSHOT.zip</entry>
+<entry key="group">pl.kwi</entry>
+<entry key="name">Cq5-example-helloworld-app</entry>
+<entry key="path">/etc/packages/pl.kwi/Cq5-example-helloworld-app-1.0-SNAPSHOT.zip</entry>
 </properties>
