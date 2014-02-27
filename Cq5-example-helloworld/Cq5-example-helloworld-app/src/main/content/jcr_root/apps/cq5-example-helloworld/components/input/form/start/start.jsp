@@ -24,7 +24,8 @@
                  org.apache.sling.api.resource.ValueMap,
                  org.apache.sling.scripting.jsp.util.JspSlingHttpServletResponseWrapper"%>
 
-<c:set var="pageAfterAction" value="<%= properties.get("pageAfterAction") %>"/>
+<%@taglib prefix="sling2" uri="http://sling.apache.org/taglibs/sling" %>
+<sling2:adaptTo adaptable="${resource}" adaptTo="pl.kwi.model.input.form.InputStartModel" var="model"/>
 
 <%
 %><cq:setContentBundle/><%
@@ -49,7 +50,7 @@
 
 
 
-<c:if test="${empty pageAfterAction}">
+<c:if test="${empty model.pageAfterAction}">
 	<div class="errorMessages">
 		Please fill mandatory form`s field: 
 		Edit -> Advanced -> Action Configuration -> Redirect to page after action
