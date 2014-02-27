@@ -1,8 +1,8 @@
 <%@include file="/libs/foundation/global.jsp" %>
 <%%>
-<c:set var="textPage" value="<%= properties.get("textPage") %>"/>
-<c:set var="textOutput" value="<%= properties.get("textOutput") %>"/>
+<%@taglib prefix="sling2" uri="http://sling.apache.org/taglibs/sling" %>
+<sling2:adaptTo adaptable="${resource}" adaptTo="pl.kwi.model.output.OutputSubtitleModel" var="model"/>
 
 
 
-<div class="subtitle"><h3 id="subtitle">${textPage}: <b>${textOutput}</b></h3></div>
+<div class="subtitle"><h3 id="subtitle">${model.textPage}: <b>${model.textOutput}</b></h3></div>
