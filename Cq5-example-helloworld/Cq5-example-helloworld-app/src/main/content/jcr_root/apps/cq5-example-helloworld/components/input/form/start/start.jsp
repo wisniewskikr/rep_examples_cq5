@@ -56,18 +56,11 @@
 		Edit -> Advanced -> Action Configuration -> Redirect to page after action
 	</div>
 </c:if>
-
-
-
-<%@ page import="pl.kwi.utils.FormUtil,
-                 pl.kwi.utils.FormUtilModel"%>
-                 
-<c:set var="modelContent" value="<%=FormUtil.getModelWithResultComponentExist(resource, "content")%>"/>                 
-<c:if test="${!modelContent.componentExists}">
+                
+<c:if test="${!model.existsResourceContent}">
 	<div class="errorMessages">Please add mandatory form`s component: "Form - Content"</div>
 </c:if>
-
-<c:set var="modelSubmit" value="<%=FormUtil.getModelWithResultComponentExist(resource, "submit")%>"/>                 
-<c:if test="${!modelSubmit.componentExists}">
+                
+<c:if test="${!model.existsResourceSubmit}">
 	<div class="errorMessages">Please add mandatory form`s component: "Form - Submit button"</div>
 </c:if>
