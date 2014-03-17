@@ -5,12 +5,19 @@ import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+import pl.kwi.model.abstr.AbstractResourceModel;
+
 @Model(adaptables=Resource.class)
-public class OutputTitleModel {
-	
+public class OutputTitleModel extends AbstractResourceModel {
+		
 	
 	@Inject
 	private String textHelloWorld;
+	
+	
+	public OutputTitleModel(Resource resource) {
+		super(resource);
+	}
 
 	
 	public String getTextHelloWorld() {

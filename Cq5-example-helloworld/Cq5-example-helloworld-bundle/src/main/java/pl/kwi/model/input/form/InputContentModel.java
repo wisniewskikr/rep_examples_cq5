@@ -4,17 +4,15 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Via;
 
-import com.day.cq.wcm.api.Page;
-import com.day.cq.wcm.api.PageManager;
+import pl.kwi.model.abstr.AbstractRequestModel;
+
 
 @Model(adaptables=SlingHttpServletRequest.class)
-public class InputContentModel {
-	
+public class InputContentModel extends AbstractRequestModel {
+		
 	
 	@Inject @Via("resource")
 	private String textName;
@@ -27,28 +25,18 @@ public class InputContentModel {
 	
 	private String currentPagePath;
 	
-	private String errorField;
-	
-	private SlingHttpServletRequest request;
-	
-	private Resource resource;
-	
-	private ResourceResolver resourceResolver;
+	private String errorField;	
 	
 	
-	public InputContentModel(SlingHttpServletRequest request) {
-		this.request = request;
-		this.resource = request.getResource();
-		this.resourceResolver = resource.getResourceResolver();
+	public InputContentModel(SlingHttpServletRequest slingRequest) {
+		super(slingRequest);
 	}
 	
 	
 	@PostConstruct
 	public void init() {
-		PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
-		Page page = pageManager.getContainingPage(resource);
-		currentPagePath = page.getPath();
-		errorField = request.getParameter("errorField");
+		currentPagePath = getCurrentPage().getPath();
+		errorField = getSlingRequest().getParameter("errorField");
 	}
 
 	
