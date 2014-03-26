@@ -5,15 +5,22 @@ import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+import pl.kwi.model.abstr.AbstractSlingModel;
+
 @Model(adaptables=Resource.class)
-public class InputSubmitModel {
-	
+public class InputSubmitModel extends AbstractSlingModel {
+		
 	
 	@Inject
 	private String textSubmit;
 
 	@Inject
 	private String submitHint;
+	
+	
+	public InputSubmitModel(Resource resource) {
+		super(resource);
+	}
 
 	
 	public String getTextSubmit() {

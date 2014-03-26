@@ -7,26 +7,27 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Via;
 
+import pl.kwi.model.abstr.AbstractSlingModel;
+import pl.kwi.model.exceptions.SlingModelsException;
+
 @Model(adaptables=SlingHttpServletRequest.class)
-public class OutputContentModel {
-	
+public class OutputContentModel extends AbstractSlingModel {
+		
 	
 	@Inject @Via("resource")
 	private String textHelloWorld;
 	
-	private SlingHttpServletRequest request;
-	
 	private String name;
 	
 	
-	public OutputContentModel(SlingHttpServletRequest request) {
-		this.request = request;
+	public OutputContentModel(SlingHttpServletRequest slingRequest) {
+		super(slingRequest);
 	}
 	
 	
 	@PostConstruct
-	public void init() {
-		name = request.getParameter("name");
+	public void init() throws SlingModelsException {
+		name = getSlingRequest().getParameter("name");
 	}
 	
 	

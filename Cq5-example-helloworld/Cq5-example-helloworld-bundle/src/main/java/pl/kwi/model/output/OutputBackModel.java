@@ -4,16 +4,16 @@ import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
 
-import com.day.cq.wcm.api.Page;
-import com.day.cq.wcm.api.PageManager;
+import pl.kwi.model.abstr.AbstractSlingModel;
+import pl.kwi.model.exceptions.SlingModelsException;
+
 
 @Model(adaptables=Resource.class)
-public class OutputBackModel {
-	
+public class OutputBackModel extends AbstractSlingModel {
+		
 	
 	@Inject
 	private String textBack;
@@ -26,30 +26,23 @@ public class OutputBackModel {
 	
 	private boolean backTargetEmpty;
 	
-	private Resource resource;
-	
-	private ResourceResolver resourceResolver;
-	
 	
 	public OutputBackModel(Resource resource) {
-		this.resource = resource;
-		this.resourceResolver = resource.getResourceResolver();
+		super(resource);
 	}
 
 	
 	@PostConstruct
-	public void init() {
+	public void init() throws SlingModelsException {
 		
 		backTargetEmpty = false;
 		
 		if("".equals(backTarget)) {
-			backTargetEmpty = true;
-			PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
-			Page page = pageManager.getContainingPage(resource);
-			backTarget = page.getPath();
+			backTargetEmpty = true;			
+			backTarget = getCurrentPage().getPath();
 		}
 		
-		backTarget = resourceResolver.map(backTarget);		
+		backTarget = getResourceResolver().map(backTarget);		
 		
 	}
 	

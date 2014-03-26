@@ -166,6 +166,14 @@
 			<scope>provided</scope>
 		</dependency>
 		
+		 <!-- Dependencies with WCMUtils -->
+         <dependency>
+           	<groupId>com.day.cq.wcm</groupId>
+			<artifactId>cq-wcm-commons</artifactId>
+			<version>5.4.0</version>
+			<scope>provided</scope>
+         </dependency>
+		
 		<!-- Java API dependencies -->
 		<dependency>
 		    <groupId>javax</groupId>

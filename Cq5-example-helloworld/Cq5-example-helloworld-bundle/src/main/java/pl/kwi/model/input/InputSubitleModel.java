@@ -5,8 +5,10 @@ import javax.inject.Inject;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+import pl.kwi.model.abstr.AbstractSlingModel;
+
 @Model(adaptables=Resource.class)
-public class InputSubitleModel {
+public class InputSubitleModel extends AbstractSlingModel {
 	
 	
 	@Inject
@@ -14,6 +16,11 @@ public class InputSubitleModel {
 
 	@Inject
 	private String textInput;
+	
+	
+	public InputSubitleModel(Resource resource) {
+		super(resource);
+	}
 
 	
 	public String getTextPage() {
